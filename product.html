@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>shopping website</title>
+</head>
+
+<body>
+  <!--導覽列-->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand mr-auto"><i class="fa fa-heart text-primary mr-1"></i>六角血拚賣賣</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-cart" data-toggle="dropdown">
+        <i class="fa fa-shopping-cart text-dark fa-2x"></i>
+        <span class="badge badge-pill badge-danger">8</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+        <div class="px-4 py-3">
+          <h6>已選擇商品</h6>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="dismiss"><i
+                      class="fa fa-trash-o text-secondary text-center" aria-hidden="true"></i></a>
+                </td>
+                <td>金牌西裝</td>
+                <td>1件</td>
+                <td class="text-right">$580</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="dismiss"><i
+                      class="fa fa-trash-o text-secondary text-center" aria-hidden="true"></i></a>
+                </td>
+                <td>金牌女裝</td>
+                <td>1件</td>
+                <td class="text-right">$480</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="dismiss"><i
+                      class="fa fa-trash-o text-secondary text-center" aria-hidden="true"></i></a>
+                </td>
+                <td>金牌領帶</td>
+                <td>1件</td>
+                <td class="text-right">$290</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary btn-block">結帳去</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--產品列-->
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent pl-0">
+        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+        <li class="breadcrumb-item"><a href="#">金牌專賣店</a></li>
+        <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="d-flex align-items-baseline mb-3">
+          <h1 class="h2 mb-0 mr-1">金牌西裝</h1>
+          <h3 class="text-muted mb-0">(加拉哈德版)</h3>
+        </div>
+        <div class="d-flex align-items-baseline justify-content-end">
+          <div class="h6 mb-0 text-muted line-through">售價 $1299</div>
+          <div class="h4 text-danger mb-0 ml-auto">網路價 <strong>NT:520</strong></div>
+        </div>
+        <hr> 尺寸:
+        <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+          <label class="btn btn-outline-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>S
+          </label>
+          <label class="btn btn-outline-secondary disabled">
+            <input type="radio" name="options" id="option2" autocomplete="off"> M
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> L
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> XL
+          </label>
+        </div>
+        <div class="input-group mt-3">
+          <select id="number" class="form-control mr-1">
+            <option value="1">1件</option>
+            <option value="2">2件</option>
+            <option value="3">3件</option>
+            <option value="4">4件</option>
+          </select>
+          <a href="#" class="btn btn-primary" type="submit">加入購物車</a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="h2">帥氣的西裝無人能敵</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quae velit recusandae similique Numquam
+          similique quam vitae vero praesentium nobis quis
+          exercitationem veniam magni.</p>
+        <div class="text-center">
+          <div class="h3">合身剪裁</div>
+          <img
+            src="https://images.unsplash.com/photo-1548454782-15b189d129ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            alt="" class="product-bg mb-5">
+          <div class="h3">簡單就好</div>
+          <img
+            src="https://images.unsplash.com/photo-1515736076039-a3ca66043b27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt="" class="product-bg mb-5">
+          <div class="h3">不占空間</div>
+          <img
+            src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt="" class="product-bg mb-5">
+          <div class="alert alert-secondary text-center mb-5" role="alert">
+            <div class="h1">購物說明</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis aut, atque esse impedit et quidem
+              pariatur dolores omnis debitis veniam iusto blanditiis eligendi sapiente nihil, reprehenderit corporis non
+              libero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="bg-light">
+    <div class="container py-3 text-center">
+      <small class="text-secondary mr-2">&copy; 2020 六角學院</small>
+      <small>
+        <a href="" class="mr-1">About</a>
+        <a href="" class="mr-1">Git</a>
+        <a href="" class="mr-1">Facebook</a>
+      </small>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
